@@ -109,6 +109,12 @@ CSSInjector.commonCSS = `
       width: 20px;
       height: 20px;
     }
+    .download_entry {
+      display: none !important;
+    }
+    .panel.give_me .nav_view {
+      top: 154px !important;
+    }
     @media (max-width: 512px) {
       .panel {
         width: 75px !important;
