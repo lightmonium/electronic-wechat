@@ -55,7 +55,7 @@
     "is-xfce": "^1.0.2"
   },
   "devDependencies": {
-    "electron": "1.4.15",
+    "electron": "2.0.4",
     "electron-packager": "^8.5.1",
     "electron-builder": "^20.19.1",
     "babel-eslint": "^7.1.1",
