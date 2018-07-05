@@ -11,6 +11,7 @@
     "build:linux32": "./scripts/build.sh linux ia32",
     "build:linux": "./scripts/build.sh linux x64",
     "build:linux64": "./scripts/build.sh linux x64",
+    "build:linux:appimage": "build --linux",
     "build:win": ".\\scripts\\build-win32.bat win32 ia32",
     "build:win32": ".\\scripts\\build-win32.bat win32 ia32",
     "build:win64": ".\\scripts\\build-win32.bat win32 x64"
@@ -25,15 +26,28 @@
     "微信",
     "Web"
   ],
-  "author": "Zhongyi Tong",
+  "author": {
+    "name": "Zhongyi Tong",
+    "email": "ZHONGYI.TONG@foxmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/geeeeeeeeek/wechat-electron/issues"
   },
   "homepage": "https://github.com/geeeeeeeeek/wechat-electron/",
+  "build": {
+    "productName": "Electronic WeChat",
+    "appId": "com.github.geeeeeeeeek.electronic-wechat",
+    "artifactName": "ElectronicWeChat-${version}-${arch}.${ext}",
+    "linux": {
+      "icon": "assets/icon.icns",
+      "category": "Network",
+      "target": [
+        "AppImage"
+      ]
+    }
+  },
   "dependencies": {
-    "electron": "1.4.15",
-    "electron-packager": "^8.5.1",
     "nconf": "^0.8.4",
     "pinyin": "^2.8.0",
     "emojione": "^2.2.7",
@@ -41,6 +55,9 @@
     "is-xfce": "^1.0.2"
   },
   "devDependencies": {
+    "electron": "1.4.15",
+    "electron-packager": "^8.5.1",
+    "electron-builder": "^20.19.1",
     "babel-eslint": "^7.1.1",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
