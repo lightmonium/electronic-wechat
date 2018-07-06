@@ -51,6 +51,7 @@ CSSInjector.commonCSS = `
       width: 100%;
       height: 100%;
       overflow: hidden;
+      font-family: "noto mono", "noto sans mono cjk sc", monospace !important;
     }
 
     div.login_box {
@@ -109,6 +110,12 @@ CSSInjector.commonCSS = `
       width: 20px;
       height: 20px;
     }
+    .header .info .nickname .display_name {
+      width: auto !important;
+    }
+    .header .info .nickname .opt {
+      float: right;
+    }
     .download_entry {
       display: none;
     }
@@ -117,6 +124,22 @@ CSSInjector.commonCSS = `
     }
     .chat .box_ft {
       margin-right: 0 !important;
+      height: auto;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+    }
+    .chat .box_ft .content {
+      flex-grow: 1;
+      position: relative;
+    }
+    .chat .box_ft .content .flex {
+      height: auto !important;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
     }
     .chat .box_ft .action {
       margin-right: 5px;
