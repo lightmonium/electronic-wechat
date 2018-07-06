@@ -110,10 +110,23 @@ CSSInjector.commonCSS = `
       height: 20px;
     }
     .download_entry {
-      display: none !important;
+      display: none;
     }
     .panel.give_me .nav_view {
       top: 154px !important;
+    }
+    .chat .box_ft {
+      margin-right: 0 !important;
+    }
+    .chat .box_ft .action {
+      margin-right: 5px;
+      margin-bottom: 5px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .chat .box_ft .desc {
+      display: none;
     }
     @media (max-width: 512px) {
       .panel {
@@ -132,7 +145,7 @@ CSSInjector.commonCSS = `
         display: none !important
       }
       .nav_view {
-        top: 36px !important
+        top: 0 !important
       }
       .chat_item.active {
         border-left: 2px solid #02b300 !important
