@@ -115,6 +115,12 @@ CSSInjector.commonCSS = `
     .header .info .nickname .opt {
       float: right;
     }
+    .tab .tab_item {
+      width: 50%;
+    }
+    .tab .tab_item:nth-child(2) {
+      display: none;
+    }
     .download_entry {
       display: none;
     }
