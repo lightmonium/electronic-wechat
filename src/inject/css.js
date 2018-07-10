@@ -39,7 +39,6 @@ CSSInjector.commonCSS = `
       display: none !important;
     }
     * {
-      -webkit-user-select: none;
       cursor: default !important;
       -webkit-user-drag: none;
     }
