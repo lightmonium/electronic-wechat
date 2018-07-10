@@ -116,7 +116,7 @@ CSSInjector.commonCSS = `
       float: right;
     }
     .tab .tab_item {
-      width: 50%;
+      width: 50% !important;
     }
     .tab .tab_item:nth-child(2) {
       display: none;
