@@ -156,6 +156,12 @@ CSSInjector.commonCSS = `
     .chat .box_ft .desc {
       display: none;
     }
+    .bubble {
+      max-width: 100% !important;
+    }
+    .js_message_plain {
+      word-break: break-all;
+    }
     @media (max-width: 512px) {
       .panel {
         width: 75px !important;
